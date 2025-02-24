@@ -1,21 +1,21 @@
 # Homework_PO
 
-## Projektowanie Oprogramowania
+## Software Design
 
-To repozytorium zawiera wszystkie projekty, które stworzyłem na zajęcia z "Projektowania Oprogramowania". Możesz śmiało czerpać inspirację lub wykorzystać kod we własnych projektach. Aktualnie uczę się **C++** i planuję zgłębić **Java**, **Python** oraz inne języki programowania.
+This repository contains all the projects I have created for the "Software Design" class. Feel free to draw inspiration or use the code in your own projects. I am currently learning **C++** and plan to dive into **Java**, **Python**, and other programming languages.
 
-### Zawartość
-Każdy folder zawiera osobny projekt, nad którym pracowałem w ramach zajęć. Będę stopniowo dodawał nowe projekty, aby pokazać swoje postępy w nauce.
+### Contents
+Each folder contains a separate project I have worked on during the class. I will gradually add new projects to showcase my progress in learning.
 
-### Technologie & Języki:
-- **C++**: Główny język używany w projektach. Skupiam się na programowaniu obiektowym, algorytmach i strukturach danych.
-- **Java**: Planuję zgłębić ten język i wprowadzić go do przyszłych projektów.
-- **Python**: Planuję zgłębić ten język i wprowadzić go do przyszłych projektów.
+### Technologies & Languages:
+- **C++**: The main language used in the projects. I focus on object-oriented programming, algorithms, and data structures.
+- **Java**: I plan to explore this language and incorporate it into future projects.
+- **Python**: I plan to explore this language and incorporate it into future projects.
 
-### Cele w Nauki:
-- Rozwijać umiejętności w **C++** i pracować nad bardziej zaawansowanymi algorytmami.
-- Zgłębić **Java** i zastosować zasady programowania obiektowego w rzeczywistych aplikacjach.
-- Poznać **Python** w kontekście automatyzacji i przetwarzania danych.
+### Learning Goals:
+- Enhance my skills in **C++** and work on more advanced algorithms.
+- Dive into **Java** and apply object-oriented programming principles in real-world applications.
+- Learn **Python** in the context of automation and data processing.
 
-### Wkład & Open Source:
-- Możesz swobodnie forknąć repozytorium, tworzyć zgłoszenia (issues) oraz wysyłać pull requesty. Zawsze jestem otwarty na opinie i chętnie uczę się od innych.
+### Contribution & Open Source:
+- Feel free to fork the repository, create issues, and submit pull requests. I am always open to feedback and eager to learn from others.
