@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729665428 source:c:\projekty c++ 1t\na_lekcji\matematyka 2\math\main.cpp
+	<iostream>
+	<ctime>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729667210 source:c:\projekty c++ 1t\zadania\przeliczanie walut\przeliczanie walut\main.cpp
+	<iostream>
+	<ctime>
+
