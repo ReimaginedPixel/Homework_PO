@@ -2,7 +2,7 @@
 
 ## Software Design
 
-This repository contains all the projects I have created for the "Software Design" class. Feel free to draw inspiration or use the code in your own projects. I am currently learning **C++** and plan to dive into **Java**, **Python**, and other programming languages.
+This repository contains all the projects I have created for the "Software Design" class. Feel free to draw inspiration or use the code in your own projects. I am currently learning **C++** and plan to dive into **Java**, **Python**, and other programming languages in the future.
 
 ### Contents
 Each folder contains a separate project I have worked on during the class. I will gradually add new projects to showcase my progress in learning.
