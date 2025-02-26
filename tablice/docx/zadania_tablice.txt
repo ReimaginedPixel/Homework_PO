@@ -1,0 +1,23 @@
+4. Tablice w C++
+
+ZADANIE 1
+Stwórz jedno wymiarową tablice o nazwie tab, w której będzie przechowywane 30 elementów typu całkowitego. Wpisz do pierwszych 10 elementów wybrane prze siebie wartości – wykonaj to poprzez bezpośrednie odwołanie się do zadanego indeksu tabeli tab. (tab[0]=1); Wyświetl wpisane wartości na ekranie.
+ZADANIE 2
+Napisz program, który wczytuje 10 dowolnych liczb rzeczywistych z klawiatury i zapisuje je w tablicy o nazwie l_rzeczy. Odczytaj te liczby i wyświetl na ekranie. 
+ZADANIE 3
+Zainicjuj!!! tablice 15 elementową o nazwie inicjacja, która jest wypełniona wartościami już w momencie jej definicji. Wpisz tylko 10 elementów. Zobacz czy ostatnie 5 elementów jest wypełnione zerami.
+ZADANIE 4
+Wpisz do tablicy za pomocą pętli for, 30 kolejnych liczb całkowitych oraz wypisz te liczby na ekranie, również za pomocą pętli for. (tab[i]).
+ZADANIE 5
+Wpisz do tablicy za pomocą pętli for, 12 dowolnych liczb rzeczywistych z klawiatury. Wyświetl te liczby na ekranie, za pomocą pętli while.
+ZADANIE 6
+Napisz program wczytujący z klawiatury 10 liczb całkowitych. Liczby te wpisywane są do tablicy. Tak zapamiętane  liczby należy wydrukować na ekranie w odwrotnej kolejności.
+
+ZADANIE 7
+Wypełnij tablice 15 elementową dowolnymi wartościami. Wypisz ta tablice. Zmień pierwszy, drugi, siódmy, przedostatni i ostatni element tej tablicy na liczbę ujemną. Wypisz tak skonstruowaną tablice na ekranie.  
+ZADANIE 8
+Wypełnij tablice 30 elementową liczbami większymi od zera. Wypisz tą tablice na ekranie. Zamień wszystkie liczby w tej tablicy na jej odpowiedniki ujemne. Wypisz na ekranie. Pomnóż przez 2 i wyświetl.
+ZADANIE 9
+Stwórz tablice o dowolnej wielkości, tak aby pomieściła oceny klasy ze sprawdzianu z funkcji. Przygotuj pętlę wprowadzająca te dane do tabeli. Policz:
+a)	Sumę ocen i wyświetl na ekranie.
+b)	Policz średnią klasy.
