@@ -20,7 +20,7 @@ void odejmowanie() {
     cout << "Wynik odejmowania: " << a - b << endl;
 }
 
-// Function that returns the result of multiplication
+// funkcja ktora zwraca wartosc mnozenie
 int mnozenie_zwraca() {
     int a, b;
     cout << "Podaj pierwsza liczbe: ";
@@ -30,7 +30,7 @@ int mnozenie_zwraca() {
     return a * b;
 }
 
-// Function that returns the result of division
+// funckja ktora zwraca wynik dzielenie
 double dzielenie_zwraca() {
     int a, b;
     cout << "Podaj pierwsza liczbe: ";
@@ -39,7 +39,7 @@ double dzielenie_zwraca() {
     cin >> b;
     if (b == 0) {
         cout << "Nie mozna dzielic przez 0" << endl;
-        return 0; // Return 0 to indicate an error
+        return 0; // oddaje 0 jako error
     }
     return static_cast<double>(a) / b;
 }
