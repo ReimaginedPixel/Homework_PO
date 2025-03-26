@@ -31,7 +31,7 @@ int mnozenie_zwraca() {
 }
 
 // funckja ktora zwraca wynik dzielenie
-double dzielenie_zwraca() {
+int dzielenie_zwraca() {
     int a, b;
     cout << "Podaj pierwsza liczbe: ";
     cin >> a;
@@ -41,7 +41,7 @@ double dzielenie_zwraca() {
         cout << "Nie mozna dzielic przez 0" << endl;
         return 0; // oddaje 0 jako error
     }
-    return static_cast<double>(a) / b;
+    return a / b;
 }
 
 void mnozenie() {
