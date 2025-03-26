@@ -4,15 +4,15 @@ using namespace std;
 
 void pitagoras() {
 	int a = 0, b = 0, c = 0;
-	cout << "Obliczanie a do kwadratu + b do kwadratu = c do kwadratu\n";
-	cout << "Podaj a\n "<< endl;;
+	cout << "Sprawdzanie poprawnosci wyrazenia algebraicznego\n";
+	cout << "Podaj a\n (Bêdzie podniesione Do Kwadratu)"<< endl;;
 	cin >> a;
-	cout << "Podaj b\n " << endl;
+	cout << "Podaj b\n (Bêdzie podniesione Do Kwadratu)" << endl;
 	cin >> b;	
-	cout << "Podaj c\n " << endl;
+	cout << "Koncowy Wynik c" << endl;
 	cin >> c;
 		
-	a=a*a,b=b*b,c=c*c;
+	a=a*a,b=b*b,c;
 	if(a+b==c)
 	{
 		cout << "To wyrazenie algebraiczne jest poprawne\n";
