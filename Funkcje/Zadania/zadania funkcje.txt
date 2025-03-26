@@ -1,0 +1,50 @@
+Funkcje zadania
+Zadanie 1
+Zadeklaruj funkcje o nazwie suma , nie będzie nic zwracała i nie będzie przyjmować żadnych argumentów. W definicji zadeklaruj dwie zmienne, które mają być dodane do siebie, a suma mam być wyświetlona na ekranie monitora. Nie zapomnij o wywołaniu funkcji w funkcji main().
+Zadanie 2
+Zadeklaruj funkcje pierwiastek, która nie będzie nic zwracać ale będzie przyjmować jeden argument  (a) przesyłany przez wartość. W definicji funkcji przyjmij ten argument i policz z niego pierwiastek. Wyświetl wynik tego działania. Nie zapomnij o bibliotece cmath.
+Zadanie 3
+Zadeklaruj funkcje iloczyn, który zwraca w wyniku swojego działania  liczby typu double. Funkcja ta przyjmuje dwa argumenty przesyłane przez wartość.  W definicji funkcja przyjmuje argumenty liczny iloczyn tych liczb oraz zwraca go do funkcji wywołującej. Wynik wyświetlany jest w głównej funkcji main(). 
+Zadanie 4
+Napisz funkcję, która wyznacza maksimum z dwóch zadanych liczb całkowitych. Wartością funkcji ma być większa spośród liczb.
+
+Zadanie 5
+
+Napisz funkcję, która wymienia wartościami dwie zadane liczby całkowite. (przesyłanie przez referencje).
+
+Zadanie
+
+
+Zadanie 6
+Napisz program kalkulator umożliwiający wykonywanie czterech działań arytmetycznych. Program ma posiadać menu zbudowane poza funkcją main(). Menu powinno zawierać pytanie które z działań chce  się wykonać, jak również opcje pozwalającą na wyjście z programu.
+
+ZADANIE 7
+Napisz program przeliczający waluty. Kwoty podane w dolarach amerykańskich, euro oraz funtach brytyjskich przeliczamy na kwoty wyrażone w złotówkach. Program ma posiadać menu
+
+ZADANIE 8
+Napisz program zamieniający temperaturę wyrażoną w stopniach Celsjusza na temperaturę wyrażoną w stopniach Fahrenheita zgodnie ze wzorem TC = 5/9(TF-32). Program ma działać podobnie do programu 10.1.2: po każdorazowym wykonaniu obliczeń użytkownik jest pytany „Czy powtórzyć obliczenia (T/N)?” W przypadku udzielenia odpowiedzi „T” (litera T naciśnięta na klawiaturze) obliczenia są kontynuowane. Jeśli użytkownik naciśnie klawisz N program kończy pracę. Program powinien reagować jedynie na klawisze T oraz N.
+ZADANIE 9
+Napisz program przeliczający długości wyrażone w metrach na długości wyrażone w calach, stopach i milach. Program ma posiadać menu podobne jak w zadaniach wyżej. Zmienna sterująca wyborem w menu ma być typach char. Użytkownik udziela odpowiedzi  naciskając jeden z klawiszy:
+
+W	–	 wyjście z programu
+C 	–	przeliczamy metry na cale
+S 	–	przeliczamy metry na stopy
+M 	–	przeliczamy metry na mile
+ZADANIE 10
+Napisz funkcję, która wyznacza n-tą (n jest liczba naturalną) potęgę zadanej liczby rzeczywistej x. Funkcja ma wykorzystywać iterację.
+
+ZADANIE 11
+Napisz funkcję, która wyznacza n-tą (n jest liczba naturalną) potęgę zadanej liczby rzeczywistej x. Funkcja ma wykorzystywać rekurencję.
+
+ZADANIE 12
+Napisz funkcję, która wyznacza wartość n! (n jest liczba naturalną). Funkcja ma wykorzystywać iterację.
+
+ZADANIE 13
+Napisz funkcję, która wyznacza wartość n! (n jest liczba naturalną). Funkcja ma wykorzystywać rekurencję.
+
+ZADANIE 14
+Napisz funkcję, która posiada trzy parametry formalne. Pierwszym parametrem jest liczba a,  drugim tablica liczb tab zaś trzecim – liczba n. Funkcja ma dla zadanej liczy a zwracać w tablicy  tab jej kod Graya. Liczba n ma informować o tym ile elementów tablicy zostało wypełnionych.
+
+Zadanie 15
+Policz rekurencyjnie liczbę cyfr w liczbie. 
+
