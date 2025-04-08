@@ -4,6 +4,8 @@
 
 using namespace std;
 
+const int SIZE = 50; //sta³a
+
 double miejsce_zerowe(double a, double b) {	
 	return -b/a;
 }
@@ -11,16 +13,18 @@ double miejsce_zerowe(double a, double b) {
 void obliczenia(){
 
 	srand(time(NULL));
-	double tab_miejsce_zerowe[30] = {};
+	double tab_miejsce_zerowe[SIZE] = {};
+	int tab_a[SIZE];
+	int tab_b[SIZE];
 	int a = 0, b = 0;
-	for(int i = 0; i <= 30; i++){
-		a = rand()%201 - 100;
-		b = rand()%201 - 100;
-		tab_miejsce_zerowe[i] = miejsce_zerowe(a,b);	
+	for(int i = 0; i <= SIZE; i++){
+		tab_a[i] = rand()%201 - 100;
+		tab_b[i] = rand()%201 - 100;
+		tab_miejsce_zerowe[i] = miejsce_zerowe(tab_a[i], tab_b[i]);	
 	}
 	
-	for(int i = 0; i <= 30; i++) {
-	cout << "Miejsc zerowe funkcji y = " << a << " x + " << b << " to: " << tab_miejsce_zerowe[i] << endl;
+	for(int i = 0; i <= SIZE; i++) {
+	cout << "Miejsc zerowe funkcji y = " << tab_a[i] << " x + " << tab_b[i] << " to: " << tab_miejsce_zerowe[i] << endl;
 	}	
 }
 
