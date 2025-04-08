@@ -20,7 +20,7 @@ void obliczenia(){
 	}
 	
 	for(int i = 0; i <= 30; i++) {
-	cout << "Miejsc zerowe funkcji y = " << a << " x + " << b << " to: " << miejsce_zerowe[i] << endl;
+	cout << "Miejsc zerowe funkcji y = " << a << " x + " << b << " to: " << tab_miejsce_zerowe[i] << endl;
 	}	
 }
 
