@@ -1,0 +1,29 @@
+Zadanie 1: Walka bohatera z potworkiem
+Opis:
+Napisz program, który symuluje pojedynczą turę walki między bohaterem a potworkiem. Oblicz, ile punktów życia zostanie potworkowi po ataku bohatera.
+
+Wymagania:
+Napisz funkcję:
+
+
+int obliczPozostaleZycie(int zyciePotworka, int silaBohatera);
+Funkcja odejmuje siłę bohatera od życia potworka i zwraca wynik.
+
+Jeżeli wynik jest mniejszy niż 0, funkcja ma zwracać 0.
+
+W funkcji main():
+
+Wczytaj dane od użytkownika:
+
+imię bohatera (string)
+
+siłę bohatera (int)
+
+typ potworka (string)
+
+życie potworka (int)
+
+Wywołaj funkcję i wypisz komunikat:
+
+<imię> zaatakował potwora typu <typ>!
+Potwór ma teraz <nowe_zycie> punktów życia.

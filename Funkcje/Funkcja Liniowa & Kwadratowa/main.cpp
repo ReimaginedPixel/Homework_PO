@@ -24,7 +24,7 @@ void obliczenia(){
 	}
 	
 	for(int i = 0; i <= SIZE; i++) {
-	cout << "Miejsc zerowe funkcji y = " << tab_a[i] << " x + " << tab_b[i] << " to: " << tab_miejsce_zerowe[i] << endl;
+	cout << i <<". Miejsc zerowe funkcji y = " << tab_a[i] << " x + " << tab_b[i] << " to: " << tab_miejsce_zerowe[i] << endl;
 	}	
 }
 
