@@ -4,10 +4,17 @@ using namespace std;
 
 int obliczPozostaleZycie(int ZyciePotwora, int silaBohatera){
 	
-	ZyciePotwora =  ZyciePotwora - silaBohatera;
-
+	int NoweZyciePotwora;
 	
-	return ZyciePotwora;
+	NoweZyciePotwora =  ZyciePotwora - silaBohatera;
+	if(NoweZyciePotwora <= 0)
+	{
+		return 0;
+	}
+	else
+	{
+		return NoweZyciePotwora;
+	}
 }
 
 
@@ -18,20 +25,21 @@ int main() {
 	string typPotwora;
 	int ZyciePotwora;
 	
-	cout << "Podaj Imie Bohatera! " << endl;
+	cout << "Podaj Imie Bohatera! " << endl << ">> ";
 	cin >> imieBohatera;
-	cout << "Podaj Sile Bohatera! " << endl;
+	cout << "Podaj Sile Bohatera! " << endl << ">> ";
 	cin >> silaBohatera;	
-	cout << "Podaj Typ Potwora! " << endl;
+	cout << "Podaj Typ Potwora! " << endl << ">> ";
 	cin >> typPotwora;	
-	cout << "Podaj Zycie Potwora! " << endl;
+	cout << "Podaj Zycie Potwora! " << endl << ">> ";
 	cin >> ZyciePotwora;
 	
 	cout << imieBohatera << " zaatakowal potwora typu " << typPotwora <<"! Potwor ma teraz " << ZyciePotwora << " punktow zycia." << endl;		
 	
-	obliczPozostaleZycie(ZyciePotwora, silaBohatera);
+	ZyciePotwora = obliczPozostaleZycie(ZyciePotwora, silaBohatera);
 	
-	cout << "Potworowi Zostalo " << ZyciePotwora << " Zycia" << endl;
+	cout << "Potworowi Zostalo " << ZyciePotwora << " Punktow Zycia" << endl;
 	
 	return 0;
 }
+
