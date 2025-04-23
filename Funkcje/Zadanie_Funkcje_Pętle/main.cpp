@@ -27,6 +27,12 @@ void petla2(int a) {
     }
 }
 
+
+void petla3(int a) {
+
+
+}
+
 	
 
 
