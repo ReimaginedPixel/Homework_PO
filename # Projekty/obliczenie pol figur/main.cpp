@@ -18,17 +18,27 @@ void menu() {
 	cout << "\n    5. Równoleg³obok  6.Szeœciok¹t";
 	linia();
 	
+	while(true)
+	{
+		
 	cout << "\n |> Wybierz Figure Do Obliczenia\n -> ";
 	cin >> wybor; 
 	
-	while(true)
-	{
+
 		cout << "\n |> Wyjsc Z Programu? 1 = tak,  0 = nie \n -> ";
 		cin >> wyborwyjscie;
+		if(wyborwyjscie == 1)
+		{
+			break;
+		}
+		else
+		{
+			wyborwyjscie = 0;
+		}
 		
 		
 		
-	}
+
 	switch(wybor) {
 		
 		case 1:
@@ -47,8 +57,11 @@ void menu() {
 		
 		
 		
-	}
-}
+	} //zamkniecie switch
+	
+	} //zamkniecie while
+		
+} //zamkniecie funkcji
 
 int main() { //obliczenie pol figur
 	setlocale(LC_CTYPE, "Polish");
