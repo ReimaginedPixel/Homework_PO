@@ -1,8 +1,7 @@
 #include <iostream>
+#include "dzialania.h"
 
 using namespace std;
-
-
 
 int main() {
 	dodawanie(5,8);
