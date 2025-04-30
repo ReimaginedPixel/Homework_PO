@@ -89,7 +89,6 @@ void menu() {
 	int wybor = 0;
 	int wyborwyjscie = 0;
 	
-	cout << "Wybierz Figure";
 	cout << "\n-+=========- Lista Figur -=========+-";
 	cout << "\n    1. Kwadrat        2.Prostok¹t";
 	cout << "\n    3. Trapez         4.Trójk¹t";
@@ -102,10 +101,6 @@ void menu() {
 	cout << "\n |> Wybierz Figure Do Obliczenia\n -> ";
 	cin >> wybor; 
 	
-
-
-		
-		
 		
 
 switch(wybor) {
@@ -173,6 +168,7 @@ switch(wybor) {
 		else
 			{
 				wyborwyjscie = 0;
+				linia();
 			}
 		
 		
