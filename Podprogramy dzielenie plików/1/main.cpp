@@ -2,9 +2,7 @@
 
 using namespace std;
 
-void dodawanie(int a, int b);
 
-double odejmowanie(int a, int b);
 
 int main() {
 	dodawanie(5,8);
