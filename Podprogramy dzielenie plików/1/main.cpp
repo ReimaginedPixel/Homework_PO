@@ -7,8 +7,8 @@ void dodawanie(int a, int b);
 double odejmowanie(int a, int b);
 
 int main() {
-	dodawanie(5,8)
-	cout << odejmowanie(7,4)
+	dodawanie(5,8);
+	cout << "odjemowanie " <<  odejmowanie(7,4);
 	
 }
 
