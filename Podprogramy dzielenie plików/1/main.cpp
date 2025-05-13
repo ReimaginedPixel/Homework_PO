@@ -13,9 +13,9 @@ int fun(int a,int b)
 
 int main() {
 	int a = 7;
-	cout << "zmienna a to:  " <<  a << endl; ;
-	cout << "odjemowanie " <<  odejmowanie(7,4);
-	
+	cout << "zmienna a to:  " <<  a << endl;
+	cout << "po wyjsciu z funcki a  " <<  fun(a) << endl;
+	cout << "Zmienna po wyjsciu z funkcji a to:  " <<  a << endl;
 }
 
 
