@@ -7,9 +7,13 @@ using namespace std;
 int fun(int a,int b)
 {
 	cout << "Wewnotrz funkcji orginalna zwrocona to: " << a  << endl;
+	a = -6;
+	cout << "Wewnotrz Funkcji zmienna a to: " << a << endl;
 }
+
 int main() {
-	dodawanie(5,8);
+	int a = 7;
+	cout << "zmienna a to:  " <<  a << endl; ;
 	cout << "odjemowanie " <<  odejmowanie(7,4);
 	
 }
