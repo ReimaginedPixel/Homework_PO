@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int fun(int a,int b)
+int fun(int a)
 {
 	cout << "Wewnotrz funkcji orginalna zwrocona to: " << a  << endl;
 	a = -6;
