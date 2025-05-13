@@ -9,6 +9,7 @@ int fun(int a,int b)
 	cout << "Wewnotrz funkcji orginalna zwrocona to: " << a  << endl;
 	a = -6;
 	cout << "Wewnotrz Funkcji zmienna a to: " << a << endl;
+	return a;
 }
 
 int main() {
