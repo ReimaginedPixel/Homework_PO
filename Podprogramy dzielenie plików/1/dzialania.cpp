@@ -1,6 +1,4 @@
 #include <iostream>
-#include "dzialania.h"
-#include "dzialania.cpp"
 
 using namespace std;
 
