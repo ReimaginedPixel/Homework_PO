@@ -13,8 +13,8 @@ void kwadrat() {
     float a;
     cout << "\n |> Podaj bok kwadratu: \n -> ";
     cin >> a;
-    cout << "Pole: " << a * a << endl;
-    cout << "Obwód: " << 4 * a << endl;
+    cout << "\nPole: " << a * a << " cm2" << endl;
+    cout << "Obwód: " << 4 * a << " cm" << endl;
     linia();
 }
 
@@ -24,8 +24,8 @@ void prostokat() {
     cin >> a;
     cout << " |> Podaj szerokoœæ: \n -> ";
     cin >> b;
-    cout << "Pole: " << a * b << endl;
-    cout << "Obwód: " << 2 * (a + b) << endl;
+    cout << "\nPole: " << a * b << " cm2" << endl;
+    cout << "Obwód: " << 2 * (a + b) << " cm" << endl;
     linia();
 }
 
@@ -41,8 +41,8 @@ void trapez() {
     cin >> bok1;
     cout << " |> Podaj bok 2: \n -> ";
     cin >> bok2;
-    cout << "Pole: " << ((a + b) * h) / 2 << endl;
-    cout << "Obwód: " << a + b + bok1 + bok2 << endl;
+    cout << "\nPole: " << ((a + b) * h) / 2 << " cm2" << endl;
+    cout << "Obwód: " << a + b + bok1 + bok2 << " cm" << endl;
     linia();
 }
 
@@ -56,8 +56,8 @@ void trojkat() {
     cin >> b;
     cout << " |> Podaj bok 3: \n -> ";
     cin >> c;
-    cout << "Pole: " << (a * h) / 2 << endl;
-    cout << "Obwód: " << a + b + c << endl;
+    cout << "\nPole: " << (a * h) / 2 << " cm2" << endl;
+    cout << "Obwód: " << a + b + c << " cm" << endl;
     linia();
 }
 
@@ -69,8 +69,8 @@ void rownoleglobok() {
     cin >> b;
     cout << " |> Podaj wysokoœæ: \n -> ";
     cin >> h;
-    cout << "Pole: " << a * h << endl;
-    cout << "Obwód: " << 2 * (a + b) << endl;
+    cout << "\nPole: " << a * h << " cm2" << endl;
+    cout << "Obwód: " << 2 * (a + b) << " cm" << endl;
     linia();
 }
 
@@ -78,8 +78,8 @@ void szesciokat() {
     float a;
     cout << "\n |> Podaj d³ugoœæ boku: \n -> ";
     cin >> a;
-    cout << "Pole: " << (3 * 1.73205 * a * a) / 2 << endl; // sqrt(3) ? 1.73205
-    cout << "Obwód: " << 6 * a << endl;
+    cout << "\nPole: " << (3 * 1.73205 * a * a) / 2 << " cm2" << endl;
+    cout << "Obwód: " << 6 * a << " cm" << endl;
     linia();
 }
 
@@ -106,42 +106,42 @@ void menu() {
 switch(wybor) {
     case 1: {
         linia();
-        cout << "Wybrano Kwadrat\n";
+        cout << "\nWybrano Kwadrat\n";
         kwadrat();
         break;
     }
 
     case 2: {
         linia();
-        cout << "Wybrano Prostok¹t\n";
+        cout << "\nWybrano Prostok¹t\n";
         prostokat();
         break;
     }
 
     case 3: {
         linia();
-        cout << "Wybrano Trapez\n";
+        cout << "\nWybrano Trapez\n";
         trapez();
         break;
     }
 
     case 4: {
         linia();
-        cout << "Wybrano Trójk¹t\n";
+        cout << "\nWybrano Trójk¹t\n";
         trojkat();
         break;
     }
 
     case 5: {
         linia();
-        cout << "Wybrano Równoleg³obok\n";
+        cout << "\nWybrano Równoleg³obok\n";
         rownoleglobok();
         break;
     }
 
     case 6: {
         linia();
-        cout << "Wybrano Szeœciok¹t\n";
+        cout << "\nWybrano Szeœciok¹t\n";
         szesciokat();
         break;
     }
@@ -165,12 +165,11 @@ switch(wybor) {
 			{
 				break;
 			}
-		else
+		else 
 			{
 				wyborwyjscie = 0;
 				linia();
 			}
-		
 		
 	} //zamkniecie while
 		
