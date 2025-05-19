@@ -1,12 +1,12 @@
 #include <iostream>
 #include <locale.h>
 #include <limits>
-#include <cstdlib>  // dla system()
+#include <cstdlib>  
 
 using namespace std;
 
 // funkcja czyszcząca ekran konsoli
-void clearScreen() {
+void WyczyscEkran() {
 #ifdef _WIN32
     system("cls");
 #else
@@ -51,7 +51,7 @@ void linia() {
     cout << "\n-+=================================+-\n";
 }
 
-// figury (tu bez zmian)
+// figury
 void kwadrat() {
     float a = wczytajFloat("\n |> Podaj bok kwadratu: \n -> ");
     cout << "\nPole: " << a * a << " cm2" << endl;
@@ -118,12 +118,12 @@ void menu() {
     int wyborwyjscie = 0;
 
     while (true) {
-        clearScreen();
+        WyczyscEkran();
         wyswietlMenu();
 
         wybor = wczytajInt("\n |> Wybierz figurę do obliczenia\n -> ");
 
-        clearScreen();
+        WyczyscEkran();
 
         switch (wybor) {
             case 1:
