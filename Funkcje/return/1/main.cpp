@@ -2,6 +2,12 @@
 
 using namespace std;
 
+void linia()
+{
+	cout << "\n------------------------------- \n\n";
+}
+
+
 bool czyGodzinaPoprawna( int godz, int min, int sek )
 	{
 		cout << "Jestem w funkcji czyGodzinaPoprawna\n";
@@ -22,6 +28,25 @@ bool czyGodzinaPoprawna( int godz, int min, int sek )
 	
 
 int main() {
-	czyGodzinaPoprawna(1,2,3);
+	/*
+	linia();
+	czyGodzinaPoprawna(-2,478,839); //nic nie jest poprawne
+	linia();
+	czyGodzinaPoprawna(1,478,839); //tylko godzina 
+	linia();
+	czyGodzinaPoprawna(1,2,839); //tylko godzina i minuty
+	linia();
+	czyGodzinaPoprawna(1,2,3); //wszytko poprawne
 	return 0;
+	*/
+	linia();
+	czyGodzinaPoprawna(24,30,30); //nic nie jest poprawne
+	linia();
+	czyGodzinaPoprawna(12, 88, 50); //tylko godzina 
+	linia();
+	czyGodzinaPoprawna(1,00,99); //tylko godzina i minuty
+	linia();
+	czyGodzinaPoprawna(7,33,01); //wszytko poprawne
+	return 0;
+	
 }
