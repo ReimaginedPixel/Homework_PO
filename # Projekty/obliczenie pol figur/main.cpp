@@ -1,11 +1,11 @@
 #include <iostream>
 #include <locale.h>
 #include <limits>
-#include <cstdlib>  
+#include <cstdlib>
 
 using namespace std;
 
-// funkcja czyszczÄ…ca ekran konsoli
+// Czyszczenie ekranu
 void WyczyscEkran() {
 #ifdef _WIN32
     system("cls");
@@ -14,15 +14,13 @@ void WyczyscEkran() {
 #endif
 }
 
-// funkcja ktora sprawdza liczby zeby niedalo sie wpisaÄ‡ litery (float)
-float wczytajFloat(const string& prompt) {
+float wczytajFloat() {
     float wartosc;
     while (true) {
-        cout << prompt;
         if (cin >> wartosc) {
             break;
         } else {
-            cout << "\n|X|> BÅ‚Ä™dne dane! WprowadÅº poprawnÄ… liczbÄ™.\n";
+            cout << "\n|X|> B³êdne dane! WprowadŸ poprawn¹ liczbê.\n -> ";
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -30,15 +28,13 @@ float wczytajFloat(const string& prompt) {
     return wartosc;
 }
 
-// funkcja ktora sprawdza liczby zeby niedalo sie wpisaÄ‡ litery (int)
-int wczytajInt(const string& prompt) {
+int wczytajInt() {
     int wartosc;
     while (true) {
-        cout << prompt;
         if (cin >> wartosc) {
             break;
         } else {
-            cout << "\n|X|> BÅ‚Ä™dny wybÃ³r! WprowadÅº liczbÄ™.\n";
+            cout << "\n|X|> B³êdne dane! WprowadŸ poprawn¹ liczbê.\n -> ";
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -46,70 +42,86 @@ int wczytajInt(const string& prompt) {
     return wartosc;
 }
 
-// linia
+// Separator
 void linia() {
     cout << "\n-+=================================+-\n";
 }
 
-// figury
+// Figury
 void kwadrat() {
-    float a = wczytajFloat("\n |> Podaj bok kwadratu: \n -> ");
+    cout << "\n |> Podaj bok kwadratu: \n -> ";
+    float a = wczytajFloat();
     cout << "\nPole: " << a * a << " cm2" << endl;
-    cout << "ObwÃ³d: " << 4 * a << " cm" << endl;
+    cout << "Obwód: " << 4 * a << " cm" << endl;
     linia();
 }
 
 void prostokat() {
-    float a = wczytajFloat("\n |> Podaj dÅ‚ugoÅ›Ä‡: \n -> ");
-    float b = wczytajFloat(" |> Podaj szerokoÅ›Ä‡: \n -> ");
+    cout << "\n |> Podaj d³ugoœæ: \n -> ";
+    float a = wczytajFloat();
+    cout << " |> Podaj szerokoœæ: \n -> ";
+    float b = wczytajFloat();
     cout << "\nPole: " << a * b << " cm2" << endl;
-    cout << "ObwÃ³d: " << 2 * (a + b) << " cm" << endl;
+    cout << "Obwód: " << 2 * (a + b) << " cm" << endl;
     linia();
 }
 
 void trapez() {
-    float a = wczytajFloat("\n |> Podaj podstawÄ™ a: \n -> ");
-    float b = wczytajFloat(" |> Podaj podstawÄ™ b: \n -> ");
-    float h = wczytajFloat(" |> Podaj wysokoÅ›Ä‡ h: \n -> ");
-    float bok1 = wczytajFloat(" |> Podaj bok 1: \n -> ");
-    float bok2 = wczytajFloat(" |> Podaj bok 2: \n -> ");
+    cout << "\n |> Podaj podstawê a: \n -> ";
+    float a = wczytajFloat();
+    cout << " |> Podaj podstawê b: \n -> ";
+    float b = wczytajFloat();
+    cout << " |> Podaj wysokoœæ h: \n -> ";
+    float h = wczytajFloat();
+    cout << " |> Podaj bok 1: \n -> ";
+    float bok1 = wczytajFloat();
+    cout << " |> Podaj bok 2: \n -> ";
+    float bok2 = wczytajFloat();
     cout << "\nPole: " << ((a + b) * h) / 2 << " cm2" << endl;
-    cout << "ObwÃ³d: " << a + b + bok1 + bok2 << " cm" << endl;
+    cout << "Obwód: " << a + b + bok1 + bok2 << " cm" << endl;
     linia();
 }
 
 void trojkat() {
-    float a = wczytajFloat("\n |> Podaj podstawÄ™: \n -> ");
-    float h = wczytajFloat(" |> Podaj wysokoÅ›Ä‡: \n -> ");
-    float b = wczytajFloat(" |> Podaj bok 2: \n -> ");
-    float c = wczytajFloat(" |> Podaj bok 3: \n -> ");
+    cout << "\n |> Podaj podstawê: \n -> ";
+    float a = wczytajFloat();
+    cout << " |> Podaj wysokoœæ: \n -> ";
+    float h = wczytajFloat();
+    cout << " |> Podaj bok 2: \n -> ";
+    float b = wczytajFloat();
+    cout << " |> Podaj bok 3: \n -> ";
+    float c = wczytajFloat();
     cout << "\nPole: " << (a * h) / 2 << " cm2" << endl;
-    cout << "ObwÃ³d: " << a + b + c << " cm" << endl;
+    cout << "Obwód: " << a + b + c << " cm" << endl;
     linia();
 }
 
 void rownoleglobok() {
-    float a = wczytajFloat("\n |> Podaj podstawÄ™: \n -> ");
-    float b = wczytajFloat(" |> Podaj bok sÄ…siedni: \n -> ");
-    float h = wczytajFloat(" |> Podaj wysokoÅ›Ä‡: \n -> ");
+    cout << "\n |> Podaj podstawê: \n -> ";
+    float a = wczytajFloat();
+    cout << " |> Podaj bok s¹siedni: \n -> ";
+    float b = wczytajFloat();
+    cout << " |> Podaj wysokoœæ: \n -> ";
+    float h = wczytajFloat();
     cout << "\nPole: " << a * h << " cm2" << endl;
-    cout << "ObwÃ³d: " << 2 * (a + b) << " cm" << endl;
+    cout << "Obwód: " << 2 * (a + b) << " cm" << endl;
     linia();
 }
 
 void szesciokat() {
-    float a = wczytajFloat("\n |> Podaj dÅ‚ugoÅ›Ä‡ boku: \n -> ");
-    cout << "\nPole: " << (3 * 1.73205 * a * a) / 2 << " cm2" << endl;
-    cout << "ObwÃ³d: " << 6 * a << " cm" << endl;
+    cout << "\n |> Podaj d³ugoœæ boku: \n -> ";
+    float a = wczytajFloat();
+    cout << "\nPole: " << (3 * 1.73205 * a * a) / 2 << " cm2" << endl; // ?3 ? 1.73205
+    cout << "Obwód: " << 6 * a << " cm" << endl;
     linia();
 }
 
-// menu
+// Menu
 void wyswietlMenu() {
     cout << "\n-+=========- Lista Figur -=========+-";
-    cout << "\n    1. Kwadrat        2. ProstokÄ…t";
-    cout << "\n    3. Trapez         4. TrÃ³jkÄ…t";
-    cout << "\n    5. RÃ³wnolegÅ‚obok  6. SzeÅ›ciokÄ…t";
+    cout << "\n    1. Kwadrat        2. Prostok¹t";
+    cout << "\n    3. Trapez         4. Trójk¹t";
+    cout << "\n    5. Równoleg³obok  6. Szeœciok¹t";
     linia();
 }
 
@@ -121,7 +133,8 @@ void menu() {
         WyczyscEkran();
         wyswietlMenu();
 
-        wybor = wczytajInt("\n |> Wybierz figurÄ™ do obliczenia\n -> ");
+        cout << "\n |> Wybierz figurê do obliczenia\n -> ";
+        wybor = wczytajInt();
 
         WyczyscEkran();
 
@@ -133,7 +146,7 @@ void menu() {
                 break;
             case 2:
                 linia();
-                cout << "\nWybrano ProstokÄ…t\n";
+                cout << "\nWybrano Prostok¹t\n";
                 prostokat();
                 break;
             case 3:
@@ -143,37 +156,33 @@ void menu() {
                 break;
             case 4:
                 linia();
-                cout << "\nWybrano TrÃ³jkÄ…t\n";
+                cout << "\nWybrano Trójk¹t\n";
                 trojkat();
                 break;
             case 5:
                 linia();
-                cout << "\nWybrano RÃ³wnolegÅ‚obok\n";
+                cout << "\nWybrano Równoleg³obok\n";
                 rownoleglobok();
                 break;
             case 6:
                 linia();
-                cout << "\nWybrano SzeÅ›ciokÄ…t\n";
+                cout << "\nWybrano Szeœciok¹t\n";
                 szesciokat();
                 break;
             default:
                 linia();
-                cout << " |> PodaÅ‚eÅ› zÅ‚Ä… liczbÄ™!\n";
+                cout << " |> Poda³eœ z³¹ liczbê!\n";
                 linia();
-                cout << "\nNaciÅ›nij Enter aby sprÃ³bowaÄ‡ ponownie...";
+                cout << "\nNaciœnij Enter aby spróbowaæ ponownie...";
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cin.get();
-                continue; // wracamy na poczÄ…tek pÄ™tli menu
+                continue;
         }
 
-        // pytanie o wyjÅ›cie lub kontynuacjÄ™
-        while (true) {
-            wyborwyjscie = wczytajInt("\n |> WyjÅ›Ä‡ z programu? 1 = tak, inna liczba = nie \n -> ");
-            if (wyborwyjscie == 1) {
-                return;
-            } else {
-                break; // powrÃ³t do menu - ekran siÄ™ wyczyÅ›ci w nastÄ™pnej iteracji
-            }
+        cout << "\n |> Wyjœæ z programu? 1 = tak, inna liczba = nie \n -> ";
+        wyborwyjscie = wczytajInt();
+        if (wyborwyjscie == 1) {
+            return;
         }
     }
 }
@@ -183,3 +192,4 @@ int main() {
     menu();
     return 0;
 }
+
