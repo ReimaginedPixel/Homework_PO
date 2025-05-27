@@ -111,7 +111,7 @@ void rownoleglobok() {
 void szesciokat() {
     cout << "\n |> Podaj d³ugoœæ boku: \n -> ";
     float a = wczytajFloat();
-    cout << "\nPole: " << (3 * 1.73205 * a * a) / 2 << " cm2" << endl; // ?3 ? 1.73205
+    cout << "\nPole: " << (3 * 1.73205 * a * a) / 2 << " cm2" << endl; 
     cout << "Obwód: " << 6 * a << " cm" << endl;
     linia();
 }
