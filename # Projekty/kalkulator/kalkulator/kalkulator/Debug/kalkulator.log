@@ -1,0 +1,5 @@
+﻿  kalkulator.cpp
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\kalkulator\kalkulator.cpp(10,13): warning C4129: "|": nierozpoznany znak sekwencji ucieczki
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\kalkulator\kalkulator.cpp(12,13): warning C4129: "_": nierozpoznany znak sekwencji ucieczki
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\kalkulator\kalkulator.cpp(175,25): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u221A" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+  kalkulator.vcxproj -> C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\Debug\kalkulator.exe
