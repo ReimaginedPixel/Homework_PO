@@ -14,6 +14,17 @@ void logo()
 )" << endl;
 }
 
+void konieclogo()
+{
+    cout << R"(
+ __                .__                
+|  | ______   ____ |__| ____   ____   
+|  |/ /  _ \ /    \|  |/ __ \_/ ___\  
+|    <  <_> )   |  \  \  ___/\  \___  
+|__|__\____/|___|__/__|\_____>\_____> 
+)" << endl;
+}
+
 void menu()
 {
     cout << "\n========== MENU KALKULATORA ==========\n";
@@ -158,10 +169,14 @@ bool czyKontynuowac()
     cout << "\nChcesz wykonac kolejne obliczenie? (t/n): ";
     cin >> wybor;
 
-    if (wybor == 't' || wybor == 'T') {
+    if (wybor == 't' || wybor == 'T') { // OR ||
         system("cls"); // dla Windows, na Linuxie lepiej "clear"
         logo();
         return true;
+    }
+    else
+    {
+        konieclogo();
     }
 
     return false;
@@ -282,13 +297,7 @@ int main()
 
         case 0: // Wyjscie
             cout << "Dziekuje za skorzystanie z kalkulatora!\n\n";
-            cout << R"(
- __                .__                
-|  | ______   ____ |__| ____   ____   
-|  |/ /  _ \ /    \|  |/ __ \_/ ___\  
-|    <  <_> )   |  \  \  ___/\  \___  
-|__|__\____/|___|__/__|\_____>\_____> 
-)" << endl;
+            konieclogo();
             kontynuuj = false;
             break;
 

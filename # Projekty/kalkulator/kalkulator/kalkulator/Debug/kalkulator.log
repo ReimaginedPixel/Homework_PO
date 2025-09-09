@@ -1,3 +1,3 @@
 ﻿  kalkulator.cpp
-C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\kalkulator\kalkulator.cpp(252,25): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u221A" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\kalkulator\kalkulator.cpp(267,25): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u221A" nie może być przedstawiony w bieżącej stronie kodowej (1250)
   kalkulator.vcxproj -> C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\# Projekty\kalkulator\kalkulator\Debug\kalkulator.exe
