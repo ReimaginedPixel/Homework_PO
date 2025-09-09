@@ -11,7 +11,7 @@ void logo()
 | |/ / _` | | |/ / | | | |/ _` | __/ _ \| '__| 
 |   < (_| | |   <| |_| | | (_| | || (_) | |    
 |_|\_\__,_|_|_|\_\\__,_|_|\__,_|\__\___/|_|    
-)" << endl; //r zapewnia ze sa spacje
+)" << endl;
 }
 
 void menu()
@@ -23,68 +23,59 @@ void menu()
     cout << "4. Dzielenie (/)\n";
     cout << "5. Potega (x^y)\n";
     cout << "6. Pierwiastek kwadratowy\n";
+    cout << "7. Procent\n";
+    cout << "8. Reszta z dzielenia (%)\n";
     cout << "0. Wyjscie\n";
     cout << "======================================\n";
     cout << "Wybierz opcje: ";
 }
 
-// Funkcja wczytuje liczbę zmiennoprzecinkową od użytkownika
-// Parametr: komunikat – tekst wyświetlany przy proszeniu o liczbę
-// Zwraca: wprowadzoną liczbę typu double
-double wczytajLiczbe(const string& komunikat)
+// Funkcja wczytuje liczbę zmiennoprzecinkową
+double wczytajLiczbe()
 {
     double liczba;
-    cout << komunikat;
 
-    // Pętla wykonuje się, dopóki użytkownik nie poda poprawnej liczby
-    while (!(cin >> liczba))
-    {
+    while (!(cin >> liczba)) {
         cout << "Blad: Wprowadz prawidlowa liczbe!\n";
-        cout << komunikat;
-        cin.clear(); // Resetuje flagę błędu strumienia
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Odrzuca niepoprawne dane z bufora
+        cout << "Podaj liczbe: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     return liczba;
 }
 
-// Funkcja wczytuje liczbę całkowitą od użytkownika
-// Parametr: komunikat – tekst wyświetlany przy proszeniu o liczbę całkowitą
-// Zwraca: wprowadzoną liczbę typu int
-int wczytajCalkowita(const string& komunikat)
+// Funkcja wczytuje liczbę całkowitą
+int wczytajCalkowita()
 {
     int liczba;
-    cout << komunikat;
 
-    // Pętla wykonuje się, dopóki użytkownik nie poda poprawnej liczby całkowitej
-    while (!(cin >> liczba))
-    {
+    while (!(cin >> liczba)) {
         cout << "Blad: Wprowadz prawidlowa liczbe calkowita!\n";
-        cout << komunikat;
-        cin.clear(); // Resetuje flagę błędu strumienia
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Odrzuca niepoprawne dane z bufora
+        cout << "Podaj liczbe calkowita: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     return liczba;
 }
 
-// Funkcja wczytuje wybór opcji od użytkownika
-// Zwraca: numer wybranej opcji (int)
+// Wczytuje wybór z menu
 int wczytajWybor()
 {
     int wybor;
 
-    // Pętla wykonuje się, dopóki użytkownik nie poda poprawnego numeru opcji
-    while (!(cin >> wybor))
-    {
+    while (!(cin >> wybor)) {
         cout << "Blad: Wprowadz prawidlowy numer opcji!\n";
         cout << "Wybierz opcje: ";
-        cin.clear(); // Resetuje flagę błędu strumienia
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Odrzuca niepoprawne dane z bufora
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     return wybor;
 }
+
+// Operacje
 double dodawanie(double a, double b)
 {
     return a + b;
@@ -108,28 +99,25 @@ double dzielenie(double a, double b)
 double potega(double podstawa, int wykladnik)
 {
     double wynik = 1;
-    if (wykladnik >= 0)
-    {
-        for (int i = 0; i < wykladnik; i++)
-        {
+
+    if (wykladnik >= 0) {
+        for (int i = 0; i < wykladnik; i++) {
             wynik *= podstawa;
         }
     }
-    else
-    {
-        for (int i = 0; i < -wykladnik; i++)
-        {
+    else {
+        for (int i = 0; i < -wykladnik; i++) {
             wynik *= podstawa;
         }
         wynik = 1 / wynik;
     }
+
     return wynik;
 }
 
 double pierwiastek(double liczba)
 {
-    if (liczba < 0)
-    {
+    if (liczba < 0) {
         cout << "Blad: Nie mozna obliczyc pierwiastka z liczby ujemnej!\n";
         return 0;
     }
@@ -137,19 +125,31 @@ double pierwiastek(double liczba)
     double wynik = liczba / 2;
     double poprzedni;
 
-    // Metoda Newtona dla pierwiastka kwadratowego
-    for (int i = 0; i < 20; i++)
-    {
+    for (int i = 0; i < 20; i++) {
         poprzedni = wynik;
         wynik = (wynik + liczba / wynik) / 2;
-
-        // Sprawdzenie dokladnosci
         double roznica = wynik - poprzedni;
-        if (roznica < 0) roznica = -roznica;
-        if (roznica < 0.000001) break;
+
+        if (roznica < 0) {
+            roznica = -roznica;
+        }
+
+        if (roznica < 0.000001) {
+            break;
+        }
     }
 
     return wynik;
+}
+
+double procent(double liczba, double proc)
+{
+    return (liczba * proc) / 100.0;
+}
+
+int resztaZDzielenia(int a, int b)
+{
+    return a % b;
 }
 
 bool czyKontynuowac()
@@ -158,10 +158,9 @@ bool czyKontynuowac()
     cout << "\nChcesz wykonac kolejne obliczenie? (t/n): ";
     cin >> wybor;
 
-    if (wybor == 't' || wybor == 'T')
-    {
-        system("cls"); // czyści ekran w Windows
-        logo();        // znowu pokazuje logo
+    if (wybor == 't' || wybor == 'T') {
+        system("cls"); // dla Windows, na Linuxie lepiej "clear"
+        logo();
         return true;
     }
 
@@ -179,76 +178,117 @@ int main()
 
     cout << "Witaj w kalkulatorze!\n";
 
-    while (kontynuuj)
-    {
+    while (kontynuuj) {
         menu();
         wybor = wczytajWybor();
 
-        switch (wybor)
-        {
+        switch (wybor) {
         case 1: // Dodawanie
             cout << "Podaj pierwsza liczbe: ";
-            liczba1 = wczytajLiczbe("Podaj pierwsza liczbe: ");
-            liczba2 = wczytajLiczbe("Podaj druga liczbe: ");
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj druga liczbe: ";
+            liczba2 = wczytajLiczbe();
+
             wynik = dodawanie(liczba1, liczba2);
             cout << "Wynik: " << liczba1 << " + " << liczba2 << " = " << wynik << "\n";
             break;
 
         case 2: // Odejmowanie
-            liczba1 = wczytajLiczbe("Podaj pierwsza liczbe: ");
-            liczba2 = wczytajLiczbe("Podaj druga liczbe: ");
+            cout << "Podaj pierwsza liczbe: ";
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj druga liczbe: ";
+            liczba2 = wczytajLiczbe();
+
             wynik = odejmowanie(liczba1, liczba2);
             cout << "Wynik: " << liczba1 << " - " << liczba2 << " = " << wynik << "\n";
             break;
 
         case 3: // Mnozenie
-            liczba1 = wczytajLiczbe("Podaj pierwsza liczbe: ");
-            liczba2 = wczytajLiczbe("Podaj druga liczbe: ");
+            cout << "Podaj pierwsza liczbe: ";
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj druga liczbe: ";
+            liczba2 = wczytajLiczbe();
+
             wynik = mnozenie(liczba1, liczba2);
             cout << "Wynik: " << liczba1 << " * " << liczba2 << " = " << wynik << "\n";
             break;
 
         case 4: // Dzielenie
-            liczba1 = wczytajLiczbe("Podaj pierwsza liczbe: ");
-            liczba2 = wczytajLiczbe("Podaj druga liczbe: ");
-            if (liczba2 != 0)
-            {
+            cout << "Podaj dzielna: ";
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj dzielnik: ";
+            liczba2 = wczytajLiczbe();
+
+            if (liczba2 != 0) {
                 wynik = dzielenie(liczba1, liczba2);
                 cout << "Wynik: " << liczba1 << " / " << liczba2 << " = " << wynik << "\n";
             }
-            else
-            {
+            else {
                 cout << "Blad: Dzielenie przez zero!\n";
             }
             break;
 
         case 5: // Potega
-            liczba1 = wczytajLiczbe("Podaj podstawe: ");
-            wykladnik = wczytajCalkowita("Podaj wykladnik (liczba calkowita): ");
+            cout << "Podaj podstawe: ";
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj wykladnik (liczba calkowita): ";
+            wykladnik = wczytajCalkowita();
+
             wynik = potega(liczba1, wykladnik);
             cout << "Wynik: " << liczba1 << "^" << wykladnik << " = " << wynik << "\n";
             break;
 
-        case 6: // Pierwiastek kwadratowy
-            liczba1 = wczytajLiczbe("Podaj liczbe: ");
-            if (liczba1 >= 0)
-            {
+        case 6: // Pierwiastek
+            cout << "Podaj liczbe: ";
+            liczba1 = wczytajLiczbe();
+
+            if (liczba1 >= 0) {
                 wynik = pierwiastek(liczba1);
                 cout << "Wynik: √" << liczba1 << " = " << wynik << "\n";
             }
             break;
 
+        case 7: // Procent
+            cout << "Podaj liczbe: ";
+            liczba1 = wczytajLiczbe();
+
+            cout << "Podaj procent (%): ";
+            liczba2 = wczytajLiczbe();
+
+            wynik = procent(liczba1, liczba2);
+            cout << liczba2 << "% z " << liczba1 << " = " << wynik << "\n";
+            break;
+
+        case 8: // Reszta z dzielenia
+            cout << "Podaj pierwsza liczbe calkowita: ";
+            liczba1 = wczytajCalkowita();
+
+            cout << "Podaj druga liczbe calkowita: ";
+            liczba2 = wczytajCalkowita();
+
+            if (liczba2 != 0) {
+                cout << "Reszta z dzielenia: " << (int)liczba1 << " % " << (int)liczba2
+                    << " = " << resztaZDzielenia((int)liczba1, (int)liczba2) << "\n";
+            }
+            else {
+                cout << "Blad: Dzielenie przez zero!\n";
+            }
+            break;
+
         case 0: // Wyjscie
             cout << "Dziekuje za skorzystanie z kalkulatora!\n\n";
-
             cout << R"(
  __                .__                
 |  | ______   ____ |__| ____   ____   
 |  |/ /  _ \ /    \|  |/ __ \_/ ___\  
 |    <  <_> )   |  \  \  ___/\  \___  
 |__|__\____/|___|__/__|\_____>\_____> 
-)" << endl; // dla r
-
+)" << endl;
             kontynuuj = false;
             break;
 
@@ -257,8 +297,7 @@ int main()
             break;
         }
 
-        if (kontynuuj && wybor >= 1 && wybor <= 6)
-        {
+        if (kontynuuj && wybor != 0) {
             kontynuuj = czyKontynuowac();
         }
     }
