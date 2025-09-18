@@ -1,0 +1,166 @@
+﻿#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    cout << "=== ZADANIA Z WSKAZNIKOW ===" << endl << endl;
+
+    // ========== ZADANIE 1 ==========
+    // Dwa obiekty a, b oraz dwa wskazniki (*wsk1, *wsk2) typu int
+    cout << "ZADANIE 1: Wskazniki na obiekty a i b" << endl;
+
+    int a = 1, b = 2;
+    int* wsk1, * wsk2;
+
+    wsk1 = &a;  // wskaznik wsk1 pokazuje na obiekt a
+    wsk2 = &b;  // wskaznik wsk2 pokazuje na obiekt b
+
+    // Sprawdzenie czy wskazniki dobrze pokazuja
+    cout << "Adres a: " << &a << ", wartosc a: " << a << endl;
+    cout << "Adres wsk1: " << wsk1 << ", wartosc *wsk1: " << *wsk1 << endl;
+    cout << "Adres b: " << &b << ", wartosc b: " << b << endl;
+    cout << "Adres wsk2: " << wsk2 << ", wartosc *wsk2: " << *wsk2 << endl;
+    cout << endl;
+
+    // ========== ZADANIE 2 ==========
+    // Zmiana wartosci w obiektach (c,d) za pomoca wskaznikow
+    cout << "ZADANIE 2: Modyfikacja obiektow przez wskazniki" << endl;
+
+    int c = -1, d = -1;
+    int* modyfikator1, * modyfikator2;
+
+    modyfikator1 = &c;
+    modyfikator2 = &d;
+
+    cout << "Przed modyfikacja:" << endl;
+    cout << "c = " << c << ", d = " << d << endl;
+
+    *modyfikator1 = 10;  // zmiana wartosci c przez wskaznik
+    *modyfikator2 = 20;  // zmiana wartosci d przez wskaznik
+
+    cout << "Po modyfikacji:" << endl;
+    cout << "c = " << c << ", d = " << d << endl;
+    cout << endl;
+
+    // ========== ZADANIE 3 ==========
+    // Wskaznik pokazujacy na rozne obiekty
+    cout << "ZADANIE 3: Wskaznik pokazuje na rozne obiekty" << endl;
+
+    double pierwszy = 4.1;
+    double drugi = 3.3333;
+    double* wsk;
+
+    wsk = &pierwszy;
+    cout << "Wskazuje na pierwszy: adres = " << wsk << ", wartosc = " << *wsk << endl;
+
+    wsk = &drugi;
+    cout << "Wskazuje na drugi: adres = " << wsk << ", wartosc = " << *wsk << endl;
+    cout << endl;
+
+    // ========== ZADANIE 4 ==========
+    // Wskaznik do tablicy - podstawowe operacje
+    cout << "ZADANIE 4: Wskaznik do tablicy - podstawowe operacje" << endl;
+
+    int tablica[10] = { 0,1,2,3,4,5,6,7,8,9 };
+    int* wsk_tab;
+
+    wsk_tab = tablica;  // alternatywnie: wsk_tab = &tablica[0];
+
+    int pierw = *wsk_tab;           // pierwszy element (0)
+    int drug = *(wsk_tab + 1);      // nastepny element (1)
+
+    wsk_tab = &tablica[9];          // ustawienie na element 9
+
+    int ostatni = *wsk_tab;         // ostatni element (9)
+    int dwa_mniej = *(wsk_tab - 2); // element o dwa mniejszy (7)
+
+    cout << "Pierwszy element: " << pierw << endl;
+    cout << "Nastepny element: " << drug << endl;
+    cout << "Ostatni element: " << ostatni << endl;
+    cout << "Element o dwa mniejszy: " << dwa_mniej << endl;
+    cout << endl;
+
+    // ========== ZADANIE 5 ==========
+    // Wyswietlanie calej tablicy przez wskaznik
+    cout << "ZADANIE 5: Wyswietlanie tablicy przez wskaznik" << endl;
+
+    int tablica1[10] = { 0,1,2,3,4,5,6,7,8,9 };
+    int* wskt = tablica1;
+
+    cout << "Zawartosc tablicy: ";
+    for (int i = 0; i < 10; i++) {
+        cout << *(wskt + i) << " ";
+    }
+    cout << endl << endl;
+
+    // ========== ZADANIE 6 ==========
+    // Przesuwanie wskaznika i wyswietlanie fragmentow tablicy
+    cout << "ZADANIE 6: Przesuwanie wskaznika" << endl;
+
+    int tablica2[10] = { 0,1,2,3,4,5,6,7,8,9 };
+    int* gdzie_pokazuje = tablica2;
+
+    cout << "Zerowy element: " << *gdzie_pokazuje << endl;
+
+    cout << "Nastepne 4 elementy: ";
+    for (int i = 1; i <= 4; i++) {
+        cout << *(gdzie_pokazuje + i) << " ";
+    }
+    cout << endl;
+
+    gdzie_pokazuje += 5;
+    cout << "Wskaznik pokazuje teraz na: " << *gdzie_pokazuje << endl;
+
+    gdzie_pokazuje = &tablica2[7];
+    cout << "Elementy od 7 do końca: ";
+    for (int i = 7; i < 10; i++) {
+        cout << *(gdzie_pokazuje + (i - 7)) << " ";
+    }
+    cout << endl << endl;
+
+    // ========== ZADANIE 7 ==========
+    // Tablica z wartosciami ujemnymi
+    cout << "ZADANIE 7: Tablica z wartosciami ujemnymi" << endl;
+
+    int tabl_ujemne[10] = { 0,-1,-2,-3,-4,-5,-6,-7,-8,-9 };
+    int* wsk_ujemne;
+    wsk_ujemne = tabl_ujemne;
+
+    cout << "Zerowy element: " << *wsk_ujemne << endl;
+
+    cout << "Zawartosc tablicy:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << *(wsk_ujemne + i) << " ";
+    }
+    cout << endl << endl;
+
+    // ========== ZADANIE 8 ==========
+    // Jeden wskaznik do czytania dwoch roznych tablic
+    cout << "ZADANIE 8: Jeden wskaznik, dwie tablice" << endl;
+
+    int pierwsza_tab[15] = { -1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15 };
+    int druga_tab[5] = { 1,2,3,4,5 };
+    int* wsk_int;
+
+    // Czytanie tablicy pierwszej
+    wsk_int = pierwsza_tab;
+    cout << "Zawartosc tablicy pierwsza[15]:" << endl;
+    for (int i = 0; i < 15; i++) {
+        cout << *(wsk_int + i) << " ";
+    }
+    cout << endl;
+
+    // Czytanie tablicy drugiej
+    wsk_int = druga_tab;
+    cout << "Zawartosc tablicy druga[5]:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << *(wsk_int + i) << " ";
+    }
+    cout << endl << endl;
+
+    cout << "=== KONIEC WYKONANYCH ZADAN ===" << endl;
+
+    return 0;
+}
