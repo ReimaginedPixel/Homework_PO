@@ -142,23 +142,77 @@ int main()
 
     int pierwsza_tab[15] = { -1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15 };
     int druga_tab[5] = { 1,2,3,4,5 };
-    int* wsk_int;
+    int* wsk_int2;
 
     // Czytanie tablicy pierwszej
-    wsk_int = pierwsza_tab;
+    wsk_int2 = pierwsza_tab;
     cout << "Zawartosc tablicy pierwsza[15]:" << endl;
     for (int i = 0; i < 15; i++) {
-        cout << *(wsk_int + i) << " ";
+        cout << *(wsk_int2 + i) << " ";
     }
     cout << endl;
 
     // Czytanie tablicy drugiej
-    wsk_int = druga_tab;
+    wsk_int2 = druga_tab;
     cout << "Zawartosc tablicy druga[5]:" << endl;
     for (int i = 0; i < 5; i++) {
-        cout << *(wsk_int + i) << " ";
+        cout << *(wsk_int2 + i) << " ";
     }
     cout << endl << endl;
+
+ 
+
+    // ========== ZADANIE 9 ==========
+    // Wprowadzone zmiany w skaznikach
+    cout << "ZADANIE 9: Wprowadzone zmiany w skaznikach" << endl;
+
+    int* wsk_int;
+    double* wsk_dub;
+
+    int calkowite[10];
+    double rzeczywiste[10];
+
+    wsk_int = calkowite;
+    wsk_dub = rzeczywiste;
+
+    for (int i = 0; i < 10; i++) {
+        *(wsk_int + i) = i + 1;
+        *(wsk_dub + i) = (i + 1) * 0.5;
+    }
+
+    cout << "Tablica calkowite: ";
+    for (int i = 0; i < 10; i++)
+        cout << calkowite[i] << " ";
+    cout << endl;
+
+    cout << "Tablica rzeczywiste: ";
+    for (int i = 0; i < 10; i++)
+        cout << rzeczywiste[i] << " ";
+    cout << endl;
+
+    wsk_int = &calkowite[2];
+    wsk_dub = &rzeczywiste[4];
+
+    cout << "\nWsk_int pokazuje na calkowite[2] = " << *wsk_int << endl;
+    cout << "Wsk_dub pokazuje na rzeczywiste[4] = " << *wsk_dub << endl;
+
+    for (int i = 0; i < 3; i++) {
+        *(wsk_int + i) = -(*(wsk_int + i));
+        *(wsk_dub + i) = -(*(wsk_dub + i));
+    }
+
+    wsk_int = calkowite;
+    wsk_dub = rzeczywiste;
+
+    cout << "\nTablica calkowite po zmianach: ";
+    for (int i = 0; i < 10; i++)
+        cout << *(wsk_int + i) << " ";
+    cout << endl;
+
+    cout << "Tablica rzeczywiste po zmianach: ";
+    for (int i = 0; i < 10; i++)
+        cout << *(wsk_dub + i) << " ";
+    cout << endl;
 
     cout << "=== KONIEC WYKONANYCH ZADAN ===" << endl;
 

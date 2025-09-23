@@ -5,12 +5,12 @@ using namespace std;
 
 void logo()
 {
-    cout << R"( _        _ _          _       _               
-| |       | | |        | |     | |             
-| | ____ _| | | ___   _| | __ _| |_ ___  _ __  
-| |/ / _` | | |/ / | | | |/ _` | __/ _ \| '__| 
-|   < (_| | |   <| |_| | | (_| | || (_) | |    
-|_|\_\__,_|_|_|\_\\__,_|_|\__,_|\__\___/|_|    
+    cout << R"( _        _ _          _       _
+| |       | | |        | |     | |
+| | ____ _| | | ___   _| | __ _| |_ ___  _ __
+| |/ / _` | | |/ / | | | |/ _` | __/ _ \| '__|
+|   < (_| | |   <| |_| | | (_| | || (_) | |
+|_|\_\__,_|_|_|\_\\__,_|_|\__,_|\__\___/|_|
 )" << endl;
 }
 
@@ -191,7 +191,7 @@ int main()
     int wykladnik;
     bool kontynuuj = true;
 
-    cout << "Witaj w kalkulatorze!\n";
+    cout << "Witaj w karkulatorze!\n";
 
     while (kontynuuj) {
         menu();
@@ -297,7 +297,17 @@ int main()
 
         case 0: // Wyjscie
             cout << "Dziekuje za skorzystanie z kalkulatora!\n\n";
+<<<<<<< HEAD
             konieclogo();
+=======
+            cout << R"(
+ __                .__
+|  | ______   ____ |__| ____   ____
+|  |/ /  _ \ /    \|  |/ __ \_/ ___\
+|    <  <_> )   |  \  \  ___/\  \___
+|__|__\____/|___|__/__|\_____>\_____>
+)" << endl;
+>>>>>>> fa29ca7864905c2c25b09118a9295ce9bf384f20
             kontynuuj = false;
             break;
 
