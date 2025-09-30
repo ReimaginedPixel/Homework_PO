@@ -214,6 +214,62 @@ int main()
         cout << *(wsk_dub + i) << " ";
     cout << endl;
 
+// ========== ZADANIE 10 ==========
+    // Dynamiczne przydzielanie pamiêci dla dwóch wskaŸników na int
+    cout << "ZADANIE 10: Dynamiczne przydzielanie pamieci dla int" << endl;
+
+    int* wsk11 = new int;
+    int* wsk22 = new int;
+
+    *wsk1 = 100;
+    *wsk2 = 200;
+
+    cout << "Pierwsza wartoœæ: " << *wsk11 << endl;
+    cout << "Druga wartoœæ: " << *wsk22 << endl;
+
+    *wsk1 = 555;
+    *wsk2 = 777;
+
+    cout << "Po zmianie - pierwsza wartoœæ: " << *wsk11 << endl;
+    cout << "Po zmianie - druga wartoœæ: " << *wsk22 << endl;
+
+    delete wsk11;
+    delete wsk22;
+    cout << endl;
+    
+    // ========== ZADANIE 11 ==========
+    cout << "ZADANIE 11: Dynamiczne przydzielanie pamieci dla int" << endl;
+	
+	int* wsk1_1;
+    int* wsk2_2;
+    
+    wsk1_1 = new int;
+    wsk2_2 = new int;
+    
+    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_2 << endl;
+    
+	*wsk1_1 = 100;
+    *wsk2_2 = 200;
+    
+    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_2 << endl;
+
+
+    // ========== ZADANIE 12 ==========
+    
+    // ========== ZADANIE 13 ==========
+    
+    // ========== ZADANIE 14 ==========
+    
+    // ========== ZADANIE 15 ==========
+    
+    // ========== ZADANIE 16 ==========
+    
+    // ========== ZADANIE 17 ==========
+    
+    // ========== ZADANIE 18 ==========
+    
+    
+    
     cout << "=== KONIEC WYKONANYCH ZADAN ===" << endl;
 
     return 0;
