@@ -241,22 +241,49 @@ int main()
     cout << "ZADANIE 11: Dynamiczne przydzielanie pamieci dla int" << endl;
 	
 	int* wsk1_1;
-    int* wsk2_2;
+    int* wsk2_1;
     
     wsk1_1 = new int;
-    wsk2_2 = new int;
+    wsk2_1 = new int;
     
-    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_2 << endl;
+    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_1 << endl;
     
 	*wsk1_1 = 100;
-    *wsk2_2 = 200;
+    *wsk2_1 = 200;
     
-    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_2 << endl;
+    cout << "Wypisane Liczby to: " << *wsk1_1  << " i " << *wsk2_1 << endl;
 
 
     // ========== ZADANIE 12 ==========
     
+    cout << "ZADANIE 12: Wskaznik typu double" << endl;
+    double* wsk1_2 = new double;
+    double* wsk2_2 = new double;
+    
+    cout << "Wpisz 2 liczby: ";
+    cin >> *wsk1_2 >> *wsk2_2;
+    cout << "wskaznik 1: " << *wsk1_2 << "wskaznik 2: " << *wsk2_2;
+        
     // ========== ZADANIE 13 ==========
+    
+    cout << "ZADANIE 13: Dynamiczny obszar pamieci dla 5 elemntowj tablicy" << endl;
+
+    int* wsk1_3 = new int[5];
+    for (int i = 0; i < 5; i++) 
+	{
+        cout << "Podaj element nr " << (i + 1) << ": ";
+        cin >> wsk1_3[i];
+    }
+    
+    cout << "\nWprowadzone elementy: ";
+    for (int i = 0; i < 5; i++) {
+        cout << wsk1_3[i] << " ";
+    }
+    
+    cout << endl;
+
+    delete[] wsk1_3; 
+    
     
     // ========== ZADANIE 14 ==========
     
