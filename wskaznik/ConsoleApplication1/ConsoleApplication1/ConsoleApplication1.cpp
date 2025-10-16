@@ -215,7 +215,7 @@ int main()
     cout << endl;
 
 // ========== ZADANIE 10 ==========
-    // Dynamiczne przydzielanie pamiêci dla dwóch wskaŸników na int
+    // Dynamiczne przydzielanie pamiï¿½ci dla dwï¿½ch wskaï¿½nikï¿½w na int
     cout << "ZADANIE 10: Dynamiczne przydzielanie pamieci dla int" << endl;
 
     int* wsk11 = new int;
@@ -224,14 +224,14 @@ int main()
     *wsk1 = 100;
     *wsk2 = 200;
 
-    cout << "Pierwsza wartoœæ: " << *wsk11 << endl;
-    cout << "Druga wartoœæ: " << *wsk22 << endl;
+    cout << "Pierwsza wartoï¿½ï¿½: " << *wsk11 << endl;
+    cout << "Druga wartoï¿½ï¿½: " << *wsk22 << endl;
 
     *wsk1 = 555;
     *wsk2 = 777;
 
-    cout << "Po zmianie - pierwsza wartoœæ: " << *wsk11 << endl;
-    cout << "Po zmianie - druga wartoœæ: " << *wsk22 << endl;
+    cout << "Po zmianie - pierwsza wartoï¿½ï¿½: " << *wsk11 << endl;
+    cout << "Po zmianie - druga wartoï¿½ï¿½: " << *wsk22 << endl;
 
     delete wsk11;
     delete wsk22;
@@ -287,8 +287,10 @@ int main()
     
     // ========== ZADANIE 14 ==========
     
+
     // ========== ZADANIE 15 ==========
     
+
     // ========== ZADANIE 16 ==========
     
     // ========== ZADANIE 17 ==========
@@ -300,4 +302,135 @@ int main()
     cout << "=== KONIEC WYKONANYCH ZADAN ===" << endl;
 
     return 0;
+    
+    /*
+    zadanie 13
+        int* wsk = new int[5];
+    cout << "" << endl;
+    cout << "Podaj pierwszy element : ";
+    cin >> wsk[0];
+
+    //zadanie 14
+    /*char* tab1 = new char[5];
+    char* tab2 = new char[5];
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Podaj znak do tab1[" << i << "]: ";
+        cin >> *(tab1 + i);
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Element z tablicy (wskaznikowo): " << *(tab1 + i) << endl;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Podaj znak do tab2[" << i << "]: ";
+        cin >> tab2[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Element z tablicy (tablicowo): " << tab2[i] << endl;
+    }
+
+    delete[] tab1;
+    delete[] tab2;
+    //zadanie 15
+    int* tablica = new int[15];
+    //srand(time(0));
+
+    for (int i = 0; i < 15; i++) {
+        int losowa = rand() % 100 + 1;
+        *(tablica + i) = losowa;
+
+        if (*(tablica + i) % 3 == 0) {
+            cout << *(tablica + i) << endl;
+        }
+    }
+
+    delete[] tablica;
+    */
+    //zadanie 16
+    /*int* tablica = new int[15];
+    srand(time(0));
+    int min, max;
+    podajliczbe(min, max);
+
+    for (int i = 0; i < 15; i++) {
+        int losowa = rand() % (max - min + 1) + min;
+        *(tablica + i) = losowa;
+
+        if (*(tablica + i) % 3 == 0) {
+            cout << *(tablica + i) << endl;
+        }
+    }
+
+    delete[] tablica;
+    return 0;
+    // zadanie 17
+void podajliczbe(int& min, int& max) {
+    cout << "Podaj dolny przedzial losowania: ";
+    cin >> min;
+    cout << "Podaj maksymalny przedzial losowania: ";
+    cin >> max;
+}
+
+void wypisz3(int* tablica, int min, int max, int rozmiar) {
+    srand(time(0));
+    for (int i = 0; i < rozmiar; i++) {
+        int losowa = rand() % (max - min + 1) + min;
+        *(tablica + i) = losowa;
+
+        if (*(tablica + i) % 3 == 0) {
+            cout << *(tablica + i) << endl;
+        }
+    }
+}*/
+        /*int* tablica = new int[15];
+        int min, max;
+
+        podajliczbe(min, max);
+        wypisz3(tablica, min, max, 15);
+
+        delete[] tablica;
+        return 0;
+        int* wsk = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            *(wsk + i) = (i + 1);
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cout << "Element z tablicy to: " << *(wsk + i) << endl;
+        }
+
+        delete[] wsk;
+
+        cout << "-----------------\n";
+        char* tab1 = new char[5];
+        char* tab2 = new char[5];
+
+        for (int i = 0; i < 5; i++) {
+            cout << "Podaj znak do tab1[" << i << "]: ";
+            cin >> *(tab1 + i);
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cout << "Element z tablicy (wskaznikowo): " << *(tab1 + i) << endl;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cout << "Podaj znak do tab2[" << i << "]: ";
+            cin >> tab2[i];
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cout << "Element z tablicy (tablicowo): " << tab2[i] << endl;
+        }
+
+        delete[] tab1;
+        delete[] tab2;*/
+        //13
+
+
+    }
 }

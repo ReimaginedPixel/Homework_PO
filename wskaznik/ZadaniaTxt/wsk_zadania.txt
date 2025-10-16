@@ -1,0 +1,69 @@
+Zad. 2:
+Opracować funkcje, które obliczają sumę dwóch liczb rzeczywistych x i y typu double.
+Prototypy funkcji mają następującą postać:
+a) double sum1 (double x, double y); // suma zwracana przez wartość funkcji
+b) void sum2(double x, double y, double * z); // suma zwracana przez wskaźnik
+c) void sum3(double x, double y, double& z); // suma zwracana przez referencję
+Zad. 3:4
+Zdefiniować wskaźnik na zmienną typu int. Zainicjować wskaźnik adresem zmiennej całkowitej
+int a = 5. Wyprowadzić na ekran zawartość zmiennej za pomocą wskaźnika oraz za pomocą
+identyfikatora zmiennej (wartości powinny być identyczne).
+Zad. 4:
+Opracować funkcje, które obliczają max(x,y) zgodnie z następującymi prototypami:
+a) double max1(double, double); // max zwracane przez wartość funkcji
+b) void max2(double, double, double *); // max zwracane przez wskaźnik
+c) void max3(double, double, double&); // max zwracane przez referencję
+Zad. 5:
+Opracować funkcje, które zamieniają wartości zmiennych x i y typu double (po wyjściu z funkcji
+x zawiera wartość y i odwrotnie). Dane są przekazywane do funkcji o następujących prototypach:
+a) void zamien1(double*, double*); // dwa wskaźniki
+b) void zamien2(double&, double&); // dwie referencje
+Zad. 6:
+Napisz funkcje, które zamienią temperaturę w stopniach Fahrenheita na temperaturę w stopniach
+Celsjusza c = (f - 32) * 5 / 9. Prototypy funkcji mają następującą postać:
+a) double far2cel1 (double f); // zwracana przez wartość funkcji
+b) void far2cel2 (double f, double * c); // zwracana przez wskaźnik
+c) void far2cel3 (double f, double& c); // zwracana przez referencję
+
+Zad. 7:
+Napisz funkcję, która przyjmuje liczbę całkowitą a z przedziału 1-30. Tę liczbę przekazuje do
+funkcji, a funkcja działa następująco: jeżeli wartość liczby będzie podzielna przez 3 to wynik
+powinien wynosić 7, w przeciwnym przypadku wynik powinien zostać obliczony ze wzoru:
+5*a – 7. Jeśli liczba a jest spoza przedziału, funkcja zwraca 0. Prototypy funkcji mają następującą
+postać:
+a) int funkcja1 (int a); // zwracana przez wartość funkcji
+b) void funkcja2 (int a, int * f); // zwracana przez wskaźnik
+c) void funkcja3 (int a, int & f); // zwracana przez referencję
+Zad. 8:
+Napisać funkcję przyjmującą trzy parametry: op, a, b. Funkcja ma zwracać następujące wyniki
+w zależności od wartości parametru op:
+op = 1: a+b
+op = 2: a-b
+op = 3: a*b
+op = 4: a/b
+Prototypy funkcji mają następującą postać:
+a) int funkcja1 (int op, int a, int b); // zwracana przez wartość funkcji
+b) void funkcja2 (int op, int a, int b, int * f); // zwracana przez wskaźnik
+c) void funkcja3 (int op, int a, int b, int & f); // zwracana przez referencję
+Zad. 9:
+Napisać własną funkcję dodawania trzech liczb add3 zwracającą dla parametrów a,b,c wartość
+a+b+c. Prototypy funkcji mają następującą postać:
+a) int add31 (int a, int b, int c); // zwracana przez wartość funkcji
+b) void add32 (int a, int b, int c, int * suma); // zwracana przez wskaźnik
+c) void add33 (int a, int b, int c, int & suma); // zwracana przez referencję
+Zad. 10:
+Napisać funkcję, która przyjmuje jako parametr liczbę rzeczywistą x oraz całkowitą n, a na wyjściu
+zwróci funkcję x^n. Prototypy funkcji mają następującą postać:
+a) double potega1 (double x, int n); // zwracana przez wartość funkcji
+b) void potega2 (double x, int n, double * potega); // zwracana przez
+wskaźnik
+c) void potega3(double x, int n, double & potega); // zwracana przez
+referencję
+Zad. 11:
+Napisz program, który pyta użytkownika o liczbę naturalną, maksymalnie 25. Na tej podstawie
+tworzy tablicę tej wielkości. Do tablicy wczytuje kolejno liczby podane przez użytkownika. Po
+podaniu wszystkich liczb:
+– liczby na indeksach parzystych zamienia na dodatnie,
+– liczby na indeksach nieparzystych zamienia na ujemne,
+Następnie należy wydrukować wszystkie liczby na ekranie. Pamięć dla tablicy ma być przydzielona
+dynamicznie.

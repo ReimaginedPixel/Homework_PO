@@ -1,2 +1,7 @@
 ﻿  ConsoleApplication1.cpp
-  ConsoleApplication1.vcxproj -> C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\Debug\ConsoleApplication1.exe
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(227,13): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\uFFFD" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(228,13): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\uFFFD" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(233,13): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\uFFFD" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(234,13): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\uFFFD" nie może być przedstawiony w bieżącej stronie kodowej (1250)
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(436,1): error C2059: błąd składniowy: „}”
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\wskaznik\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(436,1): error C2143: błąd składniowy: brakuje „;” przed „}”
