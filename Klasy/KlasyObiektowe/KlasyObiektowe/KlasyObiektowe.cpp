@@ -18,34 +18,63 @@ class komputer {
     bool czy_dziala;
 
 public:
-    void zmien_nazwe(string napis) {
-        nazwa = napis;
-    }
-    void set_ilosc_rdzeni(int ilosc) {
-        while true {
-            if (ilosc = < 0) {
-                cout << "Zła Liczba!\nPoddaj Ponownie!";
-                cin liczba;
-            }
-            else {
 
-            }
-                
+    void set_nazwa(string n) {
+        nazwa = n;
+    }
+
+    string get_nazwa() {
+        return nazwa;
+    }
+
+    void set_ilosc_rdzeni(int ilosc) {
+        if (ilosc < 0) {
+            cout << "Podano ujemna liczbe rdzeni (" << ilosc << "), zamieniam na dodatnią." << endl;
+            ilosc *= -1;
         }
-        
         ilosc_rdzeni = ilosc;
-    } //na[praw
-    void wypisz_komputer()
-    {
+    }
+
+    int get_ilosc_rdzeni() {
+        return ilosc_rdzeni;
+    }
+
+    void set_ram(int pamiec) {
+        if (pamiec < 0) {
+            cout << "Podano ujemna ilosc RAM (" << pamiec << "), zamieniam na dodatnią." << endl;
+            pamiec *= -1;
+        }
+        ram = pamiec;
+    }
+
+    int get_ram() {
+        return ram;
+    }
+
+    void set_czy_dziala(bool dziala) {
+        czy_dziala = dziala;
+    }
+
+    string get_czy_dziala() {
+        if (czy_dziala == true)
+        {
+            return "Tak";
+        } else {
+            return "Nie";
+        }
+    }
+
+    void wypisz_komputer() {
         cout << endl;
         cout << "=+= INFORMACJE O KOMPUTERZE =+=" << endl;
-        cout << "Nazwa: " << nazwa << endl;
-        cout << "Rdzenie: " << ilosc_rdzeni << endl;
-        cout << "Ram: " << ram << endl;
-        cout << "Dziala?: " << czy_dziala << endl;
+        cout << "Nazwa: " << get_nazwa() << endl;
+        cout << "Rdzenie: " << get_ilosc_rdzeni() << endl;
+        cout << "RAM: " << get_ram() << " GB" << endl;
+        cout << "Dziala?: " << get_czy_dziala() << endl;
         cout << "=+--------------------------+=" << endl;
     }
 };
+
 class monitor {
 public:
     string marka;
@@ -82,11 +111,12 @@ int main()
     
     komputer k1;
     //k1.nazwa = "Stacja01";
-    k1.zmien_nazwe("Komp2");
+    k1.set_nazwa("Komp2");
     //k1.ilosc_rdzeni = 12;
     k1.set_ilosc_rdzeni(-13);
     //k1.ram = 2048;
     //k1.czy_dziala = true;
+    k1.set_czy_dziala(false);
     k1.wypisz_komputer();
 
     //monitor
@@ -111,6 +141,7 @@ int main()
     m2.czestotliwosc = 165;
     m2.wypisz_monitor();
 
+    /*
     //monitor
     monitor m3;
     m3.marka = "LG";
@@ -286,7 +317,7 @@ int main()
     m18.cale = 34.0;
     m18.czestotliwosc = 165;
     m18.wypisz_monitor();
-
+    */
 
 
 
