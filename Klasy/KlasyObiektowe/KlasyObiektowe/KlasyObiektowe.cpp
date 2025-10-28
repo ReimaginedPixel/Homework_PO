@@ -11,6 +11,78 @@ public:
     }
 };
 
+class kwadrat {
+    int bok;
+    int obwod;
+    int pole;
+    string nazwa;
+    string kolor;
+    string jednostka;
+
+public:
+    // Setter boku z automatycznym przeliczeniem pola i obwodu
+    void set_bok(int b) {
+        if (b < 0) {
+            cout << "Podano ujemną wartość boku (" << b << "), zamieniam na dodatnią." << endl;
+            b *= -1;
+        }
+        bok = b;
+        obwod = 4 * bok;
+        pole = bok * bok;
+    }
+
+    int get_bok() {
+        return bok;
+    }
+
+    int get_obwod() {
+        return obwod;
+    }
+
+    int get_pole() {
+        return pole;
+    }
+
+    // Nazwa
+    void set_nazwa(string n) {
+        nazwa = n;
+    }
+
+    string get_nazwa() {
+        return nazwa;
+    }
+
+    // Kolor
+    void set_kolor(string k) {
+        kolor = k;
+    }
+
+    string get_kolor() {
+        return kolor;
+    }
+
+    // Jednostka
+    void set_jednostka(string j) {
+        jednostka = j;
+    }
+
+    string get_jednostka() {
+        return jednostka;
+    }
+
+    // Wypisanie danych o kwadracie
+    void wypisz_kwadrat() {
+        cout << endl;
+        cout << "=+= INFORMACJE O KWADRACIE =+=" << endl;
+        cout << "Nazwa: " << get_nazwa() << endl;
+        cout << "Kolor: " << get_kolor() << endl;
+        cout << "Bok: " << get_bok() << " " << get_jednostka << endl;
+        cout << "Obwód: " << get_obwod() << " " << get_jednostka << endl;
+        cout << "Pole: " << get_pole() << " " << jednostka << "²" << endl;
+        cout << "=+--------------------------+=" << endl;
+    }
+};
+
 class komputer {
     string nazwa;
     int ilosc_rdzeni;
@@ -59,7 +131,8 @@ public:
         if (czy_dziala == true)
         {
             return "Tak";
-        } else {
+        }
+        else {
             return "Nie";
         }
     }
@@ -100,8 +173,19 @@ public:
     }
 };
 
+
 int main()
 {
+    // kwadrat
+    kwadrat q1;
+    q1.set_nazwa("Kwadrat testowy");
+    q1.set_kolor("zielony");
+    q1.set_jednostka("cm");
+    q1.set_bok(-5); // automatycznie zrobi się 5
+    q1.wypisz_kwadrat();
+
+
+
     // osoba
     osoba ja;
     ja.wiek = 17;

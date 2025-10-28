@@ -1,2 +1,3 @@
 ﻿  KlasyObiektowe.cpp
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\KlasyObiektowe\KlasyObiektowe.cpp(82,57): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u00B2" nie może być przedstawiony w bieżącej stronie kodowej (1250)
   KlasyObiektowe.vcxproj -> C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\Debug\KlasyObiektowe.exe

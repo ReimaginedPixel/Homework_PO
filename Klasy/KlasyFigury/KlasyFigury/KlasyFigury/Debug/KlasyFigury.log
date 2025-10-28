@@ -1,0 +1,5 @@
+﻿  KlasyFigury.cpp
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyFigury\KlasyFigury\KlasyFigury\KlasyFigury.cpp(82,24): warning C4552: „*”: Wynik wyrażenia nie jest używany
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyFigury\KlasyFigury\KlasyFigury\KlasyFigury.cpp(83,24): warning C4552: „*”: Wynik wyrażenia nie jest używany
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyFigury\KlasyFigury\KlasyFigury\KlasyFigury.cpp(163,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyFigury\KlasyFigury\KlasyFigury\KlasyFigury.cpp(184,27): error C2661: "prostokat::prostokat": brak przeciążonej funkcji przyjmującej 2 argumenty
