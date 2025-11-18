@@ -78,7 +78,7 @@ public:
         cout << "Kolor: " << get_kolor() << endl;
         cout << "Bok: " << get_bok() << " " << get_jednostka << endl;
         cout << "Obwód: " << get_obwod() << " " << get_jednostka << endl;
-        cout << "Pole: " << get_pole() << " " << jednostka << "²" << endl;
+        cout << "Pole: " << get_pole() << " " << jednostka << " do kwadratu" << endl;
         cout << "=+--------------------------+=" << endl;
     }
 };

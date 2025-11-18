@@ -1,3 +1,3 @@
 ﻿  KlasyObiektowe.cpp
-C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\KlasyObiektowe\KlasyObiektowe.cpp(82,57): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u00B2" nie może być przedstawiony w bieżącej stronie kodowej (1250)
-  KlasyObiektowe.vcxproj -> C:\Users\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\Debug\KlasyObiektowe.exe
+\\10.0.0.2\profile_uczniow$\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\KlasyObiektowe\KlasyObiektowe.cpp(79,1): error C3867: „kwadrat::get_jednostka”: niestandardowa składnia; użyj znaku „&”, aby utworzyć wskaźnik do składowej
+\\10.0.0.2\profile_uczniow$\kukulak\Desktop\Nowy folder\1GitHub\Homework_PO\Klasy\KlasyObiektowe\KlasyObiektowe\KlasyObiektowe.cpp(80,1): error C3867: „kwadrat::get_jednostka”: niestandardowa składnia; użyj znaku „&”, aby utworzyć wskaźnik do składowej
