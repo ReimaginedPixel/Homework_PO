@@ -1,0 +1,76 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\PlikiZmienne.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|solutionrelative:PlikiZmienne\\PlikiZmienne.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|solutionrelative:PlikiZmienne\\danezez.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2AAF351B-0067-420E-AC5F-C32278821B22}|PlikiZmienne\\PlikiZmienne.vcxproj|solutionrelative:PlikiZmienne\\danezez2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlikiZmienne.cpp",
+              "DocumentMoniker": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\PlikiZmienne.cpp",
+              "RelativeDocumentMoniker": "PlikiZmienne\\PlikiZmienne.cpp",
+              "ToolTip": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\PlikiZmienne.cpp",
+              "RelativeToolTip": "PlikiZmienne\\PlikiZmienne.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-02T07:47:21.232Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "danezez2.txt",
+              "DocumentMoniker": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez2.txt",
+              "RelativeDocumentMoniker": "PlikiZmienne\\danezez2.txt",
+              "ToolTip": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez2.txt",
+              "RelativeToolTip": "PlikiZmienne\\danezez2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-04T09:17:08.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "danezez.txt",
+              "DocumentMoniker": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez.txt",
+              "RelativeDocumentMoniker": "PlikiZmienne\\danezez.txt",
+              "ToolTip": "C:\\Users\\kukulak\\source\\repos\\PlikiZmienne\\PlikiZmienne\\danezez.txt",
+              "RelativeToolTip": "PlikiZmienne\\danezez.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-04T08:56:51.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
